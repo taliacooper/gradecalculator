@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<h1>GRADE CALCULATOR</h1>
+<h2>separate all scores by a comma</h2>
+<table>
+    <tr>
+        <td>
+            Homework scores(in percents),
+        </td>
+        <td>
+            Homework weight
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="hmwrkScores" value="90,90,100" size="45">
+        </td>
+        <td>
+            <input type="text" id="hmwrkWeight" value="20" size="45">
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            Classwork scores(in percents),
+        </td>
+        <td>
+            Classwork weight
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="classworkScores" value="20,100,100" size="45">
+        </td>
+        <td>
+            <input type="text" id="classworkWeight" value="40" size="45">
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            Test scores(in percents),
+        </td>
+        <td>
+            Test weight
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="testScores" value="30,70,95" size="45">
+        </td>
+        <td>
+            <input type="text" id="testWeight" value="10" size="45">
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            Participation scores(in percents),
+        </td>
+        <td>
+            Participation weight
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="participationScores" value="89,90,80,77" size="45">
+        </td>
+        <td>
+            <input type="text" id="participationWeight" value="25" size="45">
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            project scores(in percents),
+        </td>
+        <td>
+            project weight
+        </td>
+
+    </tr>
+    <tr>
+        <td>
+            <input type="text" id="projectScores" value="10,100" size="45">
+        </td>
+        <td>
+            <input type="text" id="projectWeight" value="5" size="45">
+        </td>
+
+    </tr>
+</table>
+<div class="w3-container w3-teal">
+    <button id = "find" onclick="go()" >  CALCULATE CURRENT GRADE </button>
+
+</div>
+<table>
+    <tr>
+        <td>Grade Desired</td>
+        <td>Final Weight</td>
+    </tr>
+    <tr>
+        <td><input type="text" id="wantedGrade" value="80" size="45"></td>
+        <td><input type="text" id="finalWeight" value="10" size="45"></td>
+    </tr>
+
+
+</table>
+<div class="w3-container w3-teal">
+    <button id = "calculate" onclick="go2()" >  CALCULATE GRADE NEEDED </button>
+
+</div>
+
+<div id="total"></div>
+<div id="false"></div>
+<div id="final"></div>
+
+</body>
+</html>
